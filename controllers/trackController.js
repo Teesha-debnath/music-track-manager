@@ -19,6 +19,7 @@ exports.createTrack = async (req, res) => {
 
     // Debug log
     console.log("Received POST data:", req.body);
+    console.log("Received track:", req.body);
 
     // Simple validation
     if (!title || !artist || !genre || duration === undefined || duration === "") {
